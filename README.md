@@ -1,22 +1,22 @@
 # Theme Launcher
 
-Launcher Android sederhana (Kotlin + Jetpack Compose) dengan 6 tema:
-Midnight, Sunset, Forest, Ocean, Sakura, dan Wallpaper (pakai wallpaper sistem).
-Fitur: jam, pencarian aplikasi, grid aplikasi, tema tersimpan otomatis.
+Launcher Android (Kotlin + Jetpack Compose) bergaya poster:
+tanggal besar + hari tulisan tangan, jam, baterai lingkaran, latar dua warna bergelombang,
+daftar aplikasi vertikal, dan tombol bulat untuk membuka semua aplikasi.
 
-## Cara mendapatkan APK (tanpa Android Studio)
-1. Buat akun GitHub, lalu buat repository baru (misal "ThemeLauncher").
-2. Upload SEMUA isi folder ini ke repository (termasuk folder .github).
-3. Buka tab Actions > "Build APK" > Run workflow (atau otomatis jalan setelah upload).
-4. Tunggu +-3-5 menit sampai hijau, klik run-nya, lalu unduh "ThemeLauncher-debug" di bagian Artifacts.
-5. Ekstrak ZIP-nya, hasilnya app-debug.apk.
+## Pengaturan (tekan lama layar utama)
+- Tema (7 pilihan, termasuk Wallpaper sistem)
+- Font (9 pilihan) + ukuran tanggal + ukuran teks nama aplikasi
+- Ukuran ikon, bentuk ikon (asli / bulat / kotak halus), tampil/sembunyi nama aplikasi
+- Tata letak daftar atau grid (3-6 kolom)
+- Tinggi gelombang & posisi pembagi warna
+- Tampil/sembunyi tanggal, jam, sapaan, baterai; format 24 jam; nama untuk sapaan
+- Perubahan terlihat langsung di layar utama di atas panel
 
-## Cara instal di HP
-1. Kirim app-debug.apk ke HP, lalu buka.
-2. Jika diminta, izinkan "Instal aplikasi tidak dikenal" untuk aplikasi yang kamu pakai membukanya.
-3. Tekan Instal.
-4. Tekan tombol Home. Android akan menanyakan launcher; pilih "Theme Launcher" > "Selalu".
-   Atau: Pengaturan > Aplikasi > Aplikasi default > Aplikasi layar utama > Theme Launcher.
+## Cara pakai
+- Ketuk tombol bulat (atau geser ke atas): daftar semua aplikasi
+- Tekan lama ikon di daftar: tambah/hapus dari layar utama (bintang = favorit)
+- Tekan lama layar utama: pengaturan
 
-## Kembali ke launcher lama
-Pengaturan > Aplikasi default > Aplikasi layar utama > pilih launcher bawaan.
+## Menambah font sendiri
+Taruh file .ttf di app/src/main/res/font/, lalu tambahkan ke daftar fontOptions di Model.kt.
